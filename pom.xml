@@ -84,13 +84,51 @@
         </dependency>
     </dependencies>
 
+
+
     <build>
         <plugins>
+            <!-- 1. 生成普通依赖 JAR（供其他项目引用） -->
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-jar-plugin</artifactId>
+                <version>3.3.0</version>
+                <executions>
+                    <execution>
+                        <id>jar-with-dependencies</id>
+                        <phase>package</phase>
+                        <goals>
+                            <goal>jar</goal>
+                        </goals>
+                        <configuration>
+                            <classifier>plain</classifier> <!-- 生成的 JAR 后缀为 plain，如 Interceptors-0.0.1-SNAPSHOT-plain.jar -->
+                        </configuration>
+                    </execution>
+                </executions>
+            </plugin>
+
+            <!-- 2. 生成可运行的 Spring Boot 胖包（供自身启动） -->
             <plugin>
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
+                <configuration>
+                    <classifier>exec</classifier> <!-- 生成的可运行包后缀为 exec，如 Interceptors-0.0.1-SNAPSHOT-exec.jar -->
+                </configuration>
             </plugin>
         </plugins>
     </build>
+
+
+
+    <distributionManagement>
+        <repository>
+            <id>maven-releases</id>
+            <url>http://localhost:8081/repository/maven-releases/</url>
+        </repository>
+        <snapshotRepository>
+            <id>maven-snapshots</id>
+            <url>http://localhost:8081/repository/maven-snapshots/</url>
+        </snapshotRepository>
+    </distributionManagement>
 
 </project>
