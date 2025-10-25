@@ -1,6 +1,5 @@
 package org.xry.interceptors.configs;
 
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.web.servlet.config.annotation.CorsRegistry;
 import org.springframework.web.servlet.config.annotation.InterceptorRegistry;
@@ -10,11 +9,16 @@ import org.xry.interceptors.interceptors.RefreshInterceptor;
 
 @Configuration
 public class WebConfig implements WebMvcConfigurer {
-    @Autowired
-    private LoginInterceptor loginInterceptor;
+    private final LoginInterceptor loginInterceptor;
 
-    @Autowired
-    private RefreshInterceptor refreshInterceptor;
+    private final RefreshInterceptor refreshInterceptor;
+    //构造器注入bean
+    public WebConfig(LoginInterceptor loginInterceptor , RefreshInterceptor refreshInterceptor) {
+        this.loginInterceptor = loginInterceptor;
+        this.refreshInterceptor = refreshInterceptor;
+    }
+
+
 
     @Override
     public void addInterceptors(InterceptorRegistry registry) {

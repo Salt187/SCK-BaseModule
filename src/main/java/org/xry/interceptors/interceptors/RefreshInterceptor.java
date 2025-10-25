@@ -18,10 +18,11 @@ import java.util.concurrent.TimeUnit;
 
 @Component
 public class RefreshInterceptor implements HandlerInterceptor {
+    private final RedisCacheUtil redisCacheUtil;
 
-    @Resource
-    private RedisCacheUtil redisCacheUtil;
-
+    public RefreshInterceptor(RedisCacheUtil redisCacheUtil) {
+        this.redisCacheUtil = redisCacheUtil;
+    }
 
     @Override
     public boolean preHandle(HttpServletRequest request, HttpServletResponse response, Object handler)throws tokenValidationException {
