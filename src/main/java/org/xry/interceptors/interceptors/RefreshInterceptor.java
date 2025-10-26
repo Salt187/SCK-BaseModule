@@ -1,6 +1,5 @@
 package org.xry.interceptors.interceptors;
 
-import jakarta.annotation.Resource;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
 import org.springframework.stereotype.Component;
@@ -10,6 +9,7 @@ import org.xry.interceptors.pojo.RedisConst;
 import org.xry.interceptors.utils.Jwt;
 import org.xry.interceptors.utils.RedisUtils.RedisCacheUtil;
 import org.xry.interceptors.utils.ThreadLocalUtils.UserId;
+import reactor.util.annotation.NonNull;
 
 
 import java.util.List;
@@ -25,7 +25,7 @@ public class RefreshInterceptor implements HandlerInterceptor {
     }
 
     @Override
-    public boolean preHandle(HttpServletRequest request, HttpServletResponse response, Object handler)throws tokenValidationException {
+    public boolean preHandle(HttpServletRequest request, @NonNull HttpServletResponse response,@NonNull Object handler)throws tokenValidationException {
         //先判断是否是 OPTIONS 预检请求，若是直接放行（无需验证 token）
         if ("OPTIONS".equalsIgnoreCase(request.getMethod())) {
             return true; // 放行预检请求，让浏览器继续发真实请求
@@ -37,6 +37,7 @@ public class RefreshInterceptor implements HandlerInterceptor {
         //解析令牌并获取核心id
         Map<String, Object> claims  = Jwt.parseToken(token);
         Integer id =(Integer) claims.get("id");
+
 
         //验证Redis中的token
         List<String> tokens = redisCacheUtil.getList(RedisConst.TOKEN + id);
@@ -53,7 +54,7 @@ public class RefreshInterceptor implements HandlerInterceptor {
     }
 
     @Override
-    public void afterCompletion(HttpServletRequest request, HttpServletResponse response, Object handler, Exception ex){
+    public void afterCompletion(@NonNull HttpServletRequest request,@NonNull HttpServletResponse response,@NonNull Object handler, Exception ex){
         UserId.remove();                                   //2*清理ThreadLocal的数据
     }
 }

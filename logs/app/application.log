@@ -1,0 +1,33 @@
+2025-10-26 10:50:38.629 [main] INFO  org.xry.interceptors.InterceptorsApplication - Starting InterceptorsApplication using Java 21.0.6 with PID 19492 (D:\Project\Java_Project\Interceptors\target\classes started by 18737 in D:\Project\Java_Project\Interceptors)
+2025-10-26 10:50:38.634 [main] INFO  org.xry.interceptors.InterceptorsApplication - No active profile set, falling back to 1 default profile: "default"
+2025-10-26 10:50:39.924 [main] INFO  org.xry.interceptors.InterceptorsApplication - Started InterceptorsApplication in 1.713 seconds (process running for 2.114)
+2025-10-26 10:56:55.613 [main] INFO  org.xry.interceptors.InterceptorsApplicationTests - Starting InterceptorsApplicationTests using Java 21.0.6 with PID 28080 (started by 18737 in D:\Project\Java_Project\Interceptors)
+2025-10-26 10:56:55.614 [main] INFO  org.xry.interceptors.InterceptorsApplicationTests - No active profile set, falling back to 1 default profile: "default"
+2025-10-26 10:56:56.869 [main] INFO  org.xry.interceptors.InterceptorsApplicationTests - Started InterceptorsApplicationTests in 1.476 seconds (process running for 2.111)
+2025-10-26 10:57:03.813 [main] INFO  org.xry.interceptors.InterceptorsApplicationTests - Starting InterceptorsApplicationTests using Java 21.0.6 with PID 36976 (started by 18737 in D:\Project\Java_Project\Interceptors)
+2025-10-26 10:57:03.814 [main] INFO  org.xry.interceptors.InterceptorsApplicationTests - No active profile set, falling back to 1 default profile: "default"
+2025-10-26 10:57:05.110 [main] INFO  org.xry.interceptors.InterceptorsApplicationTests - Started InterceptorsApplicationTests in 1.523 seconds (process running for 2.147)
+2025-10-26 11:06:51.900 [main] INFO  org.xry.interceptors.InterceptorsApplicationTests - Starting InterceptorsApplicationTests using Java 21.0.6 with PID 20204 (started by 18737 in D:\Project\Java_Project\Interceptors)
+2025-10-26 11:06:51.901 [main] INFO  org.xry.interceptors.InterceptorsApplicationTests - No active profile set, falling back to 1 default profile: "default"
+2025-10-26 11:06:53.130 [main] INFO  org.xry.interceptors.InterceptorsApplicationTests - Started InterceptorsApplicationTests in 1.454 seconds (process running for 2.054)
+2025-10-26 11:08:06.198 [main] INFO  org.xry.interceptors.InterceptorsApplicationTests - Starting InterceptorsApplicationTests using Java 21.0.6 with PID 21996 (started by 18737 in D:\Project\Java_Project\Interceptors)
+2025-10-26 11:08:06.199 [main] INFO  org.xry.interceptors.InterceptorsApplicationTests - No active profile set, falling back to 1 default profile: "default"
+2025-10-26 11:08:07.442 [main] INFO  org.xry.interceptors.InterceptorsApplicationTests - Started InterceptorsApplicationTests in 1.474 seconds (process running for 2.075)
+2025-10-26 12:34:01.552 [main] INFO  org.xry.interceptors.InterceptorsApplication - Starting InterceptorsApplication using Java 21.0.6 with PID 13884 (D:\Project\Java_Project\Interceptors\target\classes started by 18737 in D:\Project\Java_Project\Interceptors)
+2025-10-26 12:34:01.553 [main] INFO  org.xry.interceptors.InterceptorsApplication - No active profile set, falling back to 1 default profile: "default"
+2025-10-26 12:34:02.533 [main] INFO  org.xry.interceptors.InterceptorsApplication - Started InterceptorsApplication in 1.259 seconds (process running for 1.626)
+2025-10-26 12:35:47.256 [main] INFO  org.xry.interceptors.InterceptorsApplicationTests - Starting InterceptorsApplicationTests using Java 21.0.6 with PID 30212 (started by 18737 in D:\Project\Java_Project\Interceptors)
+2025-10-26 12:35:47.257 [main] INFO  org.xry.interceptors.InterceptorsApplicationTests - No active profile set, falling back to 1 default profile: "default"
+2025-10-26 12:35:48.501 [main] INFO  org.xry.interceptors.InterceptorsApplicationTests - Started InterceptorsApplicationTests in 1.465 seconds (process running for 2.068)
+2025-10-26 13:09:33.713 [main] INFO  org.xry.interceptors.InterceptorsApplicationTests - Starting InterceptorsApplicationTests using Java 21.0.6 with PID 32136 (started by 18737 in D:\Project\Java_Project\Interceptors)
+2025-10-26 13:09:33.715 [main] INFO  org.xry.interceptors.InterceptorsApplicationTests - No active profile set, falling back to 1 default profile: "default"
+2025-10-26 13:09:34.911 [main] INFO  org.xry.interceptors.InterceptorsApplicationTests - Started InterceptorsApplicationTests in 1.418 seconds (process running for 2.029)
+2025-10-26 13:11:00.398 [main] INFO  org.xry.interceptors.InterceptorsApplication - Starting InterceptorsApplication using Java 21.0.6 with PID 40720 (D:\Project\Java_Project\Interceptors\target\classes started by 18737 in D:\Project\Java_Project\Interceptors)
+2025-10-26 13:11:00.399 [main] INFO  org.xry.interceptors.InterceptorsApplication - No active profile set, falling back to 1 default profile: "default"
+2025-10-26 13:11:01.384 [main] INFO  org.xry.interceptors.InterceptorsApplication - Started InterceptorsApplication in 1.267 seconds (process running for 1.614)
+2025-10-26 13:11:10.106 [main] INFO  org.xry.interceptors.InterceptorsApplicationTests - Starting InterceptorsApplicationTests using Java 21.0.6 with PID 38932 (started by 18737 in D:\Project\Java_Project\Interceptors)
+2025-10-26 13:11:10.107 [main] INFO  org.xry.interceptors.InterceptorsApplicationTests - No active profile set, falling back to 1 default profile: "default"
+2025-10-26 13:11:11.385 [main] INFO  org.xry.interceptors.InterceptorsApplicationTests - Started InterceptorsApplicationTests in 1.511 seconds (process running for 2.124)
+2025-10-26 13:11:36.765 [main] INFO  org.xry.interceptors.InterceptorsApplicationTests - Starting InterceptorsApplicationTests using Java 21.0.6 with PID 23676 (started by 18737 in D:\Project\Java_Project\Interceptors)
+2025-10-26 13:11:36.766 [main] INFO  org.xry.interceptors.InterceptorsApplicationTests - No active profile set, falling back to 1 default profile: "default"
+2025-10-26 13:11:37.995 [main] INFO  org.xry.interceptors.InterceptorsApplicationTests - Started InterceptorsApplicationTests in 1.455 seconds (process running for 2.076)

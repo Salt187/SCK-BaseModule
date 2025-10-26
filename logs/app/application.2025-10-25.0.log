@@ -1,0 +1,6 @@
+2025-10-25 18:22:38.287 [main] INFO  org.xry.interceptors.InterceptorsApplicationTests - Starting InterceptorsApplicationTests using Java 21.0.6 with PID 33432 (started by 18737 in D:\Project\Java_Project\Interceptors)
+2025-10-25 18:22:38.289 [main] INFO  org.xry.interceptors.InterceptorsApplicationTests - No active profile set, falling back to 1 default profile: "default"
+2025-10-25 18:22:39.619 [main] INFO  org.xry.interceptors.InterceptorsApplicationTests - Started InterceptorsApplicationTests in 1.578 seconds (process running for 2.195)
+2025-10-25 18:24:57.474 [main] INFO  org.xry.interceptors.InterceptorsApplication - Starting InterceptorsApplication using Java 21.0.6 with PID 27668 (D:\Project\Java_Project\Interceptors\target\classes started by 18737 in D:\Project\Java_Project\Interceptors)
+2025-10-25 18:24:57.475 [main] INFO  org.xry.interceptors.InterceptorsApplication - No active profile set, falling back to 1 default profile: "default"
+2025-10-25 18:24:58.463 [main] INFO  org.xry.interceptors.InterceptorsApplication - Started InterceptorsApplication in 1.267 seconds (process running for 1.626)

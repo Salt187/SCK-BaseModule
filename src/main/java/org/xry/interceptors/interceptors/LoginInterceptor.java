@@ -5,12 +5,13 @@ import jakarta.servlet.http.HttpServletResponse;
 import org.springframework.stereotype.Component;
 import org.springframework.web.servlet.HandlerInterceptor;
 import org.xry.interceptors.utils.ThreadLocalUtils.UserId;
+import reactor.util.annotation.NonNull;
 
 @Component
 public class LoginInterceptor implements HandlerInterceptor {
     //先进后出
     @Override
-    public boolean preHandle(HttpServletRequest request, HttpServletResponse response, Object handler) throws Exception {
+    public boolean preHandle(HttpServletRequest request, @NonNull HttpServletResponse response,@NonNull Object handler) throws Exception {
 
         //先判断是否是 OPTIONS 预检请求，若是直接放行（无需验证 token）
         if ("OPTIONS".equalsIgnoreCase(request.getMethod())) {

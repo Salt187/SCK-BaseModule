@@ -1,5 +1,6 @@
 package org.xry.interceptors.configs;
 
+import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.web.servlet.config.annotation.CorsRegistry;
 import org.springframework.web.servlet.config.annotation.InterceptorRegistry;
@@ -8,6 +9,7 @@ import org.xry.interceptors.interceptors.LoginInterceptor;
 import org.xry.interceptors.interceptors.RefreshInterceptor;
 
 @Configuration
+@ComponentScan("org.xry.interceptors")
 public class WebConfig implements WebMvcConfigurer {
     private final LoginInterceptor loginInterceptor;
 
@@ -16,6 +18,7 @@ public class WebConfig implements WebMvcConfigurer {
     public WebConfig(LoginInterceptor loginInterceptor , RefreshInterceptor refreshInterceptor) {
         this.loginInterceptor = loginInterceptor;
         this.refreshInterceptor = refreshInterceptor;
+        System.out.println("WebConfig 实例化成功！"); // 关键日志
     }
 
 
